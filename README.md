@@ -2,17 +2,12 @@
 
 ## Introducción
 
-Hace unos meses escuché a un empleado de unos almacenes en Palma que nunca encontraba lo que buscaba ágilmente. Este problema, además, le causaba problemas con los clientes haciendo que hubiera quejas a los superiores. El almacén tenía cierto orden, pero necesita algo para localizar de manera ágil lo que estaba buscando.  Así surgió la idea de hacer un Gestor de Almacenes.
+Como es bien sabido, la gestión y la administración de cualquier empresa es todo un reto para el encargado de esa función. Actualmente, en un mundo dónde la mayoría de empresas envían y reciben paquetería con productos, es aún más difícil conseguir que esa organización y gestión sea buena.
 
-Tiempo después, hará cosa de un mes, se nos comentó en clase que haríamos un poryecto para acabar 1º de DAW. El proyecto consistía en romper las barreras de las asignaturas y reunir todos nuestros conocimientos en una sola tarea que consisitiría en programar realizando todos los procedimientos vistos en el curso. 
+Para que esta gestión sea buena y precisa, deberemos de tener en cuenta varios aspectos. El primero, el propio diseño del almacén, que puede favorecer o no a la fácil gestión del mismo. Ha de haber un equilibrio entre el aprovechamiento del espacio y la facilidad de acceso. El segundo aspecto a tener en cuenta es la gestión de stock. Aquí es dónde realmente un software te puede ayudar más. El stock debe ser controlado al 100% para tener una efectividad elevada. Con este software además, se ahorra tiempo, se ahorran desplazamientos y se minimizan los errores. 
 
-Cuando se nos comentó, los tres integrantes del grupo pensamos que podríamos unir fuerzas y hacer el proyecto. Posteriormente, se presentó la idea de GAI y los integrantes del grupo y se confirmó que es lo que queríamos hacer por decisión unánime. Esta decisión unánime fue la que posteriormente, nos dio tanta ventaja al trabajar. 
+Tomando en cuenta los puntos previamente mencionados, llegamos a la idea de hacer un gestor de almacenamiento para el proyecto transversal que se nos propuso. ¿Qué es GAI? Bueno, G.A.I son las iniciales de "Gestión de Almacén Interactiva". Tiene como objetivo el control absoluto de todos los productos del almacén, el stock y sobre todo, facilitar la búsqueda de productos del mismo. Con ello, lo que se busca, es optimizar el tiempo de búsqueda.
 
-¿Qué es GAI? Bueno, G.A.I son las iniciales de "Gestión de Almacén Interactiva". Tiene como objetivo el control absoluto de todos los productos del almacén, el stock y sobretodo, facilitar la búsqueda de productos del mismo. Con ello, lo que se busca, es optimizar el tiempo de búsqueda.
-
-Va principalmente dirigido a empresas que dispongan de 1 o varios almacenes. Con la web de GAI pueden como opción no premium, elegir modelos de almacenes generales y escoger el que más se asemeje al que tenga la empresa usuaria con límite de hasta 2 almacenes. La opción premium puede simular con medidas reales el almacén de la empresa usuaria sin límite de almacenes.
-
-¿Cómo funciona? GAI va dirigido para los que trabajen en el almacén con un login que va a tener tres tipos de usuario: mozo, técnico, admin. El usuario mozo va dirigido a los que trabajan en la sección de dentro del almacén y que se encargan de entrar, salir productos guardarlos y ordenarlos. El usuario técnico se encarga de las transacciones y de los registros y por último el usuario admin es el que se encarga de revisar y supervisar GAI.
 
 
 

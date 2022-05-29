@@ -9,5 +9,9 @@ Para que esta gestión sea buena y precisa, deberíamos de tener en cuenta vario
 Tomando en cuenta los puntos previamente mencionados, llegamos a la idea de hacer un gestor de almacenamiento para el proyecto transversal que se nos propuso. ¿Qué es GAI? Bueno, G.A.I son las iniciales de "Gestión de Almacén Interactiva". Tiene como objetivo el control absoluto de todos los productos del almacén, el stock y sobre todo, facilitar la búsqueda de productos del mismo. Con ello, lo que se busca, es optimizar el tiempo de búsqueda.
 
 
+## Diagrama inicial del proyecto
 
+![diagramav3](https://user-images.githubusercontent.com/91564971/170886220-74017439-aab2-404a-893d-15a8a5557a70.png)
 
+En el diagrama inicial podremos observar que usa el protocolo HTTP, el cual va a ser fundamental para el funcionamiento correcto de GAI.
+Los objetivos de esta aplicación son: entrada y salida de stock, ubicación en el almacén, características del producto, características, identificación, distribución de productos.

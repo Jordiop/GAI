@@ -21,3 +21,21 @@ El diagrama de secuencia se centrará específicamente en las líneas de vida o 
 
 ![diagramaSecuencia](https://user-images.githubusercontent.com/95173613/166158091-d61f8ab7-5383-4a06-b980-f2fbad92a37c.png)
 
+## DIAGRAMA CASOS DE USO
+En este diagrama de casos de uso se pueden apreciar los diversos procesos que llevan a cabo las diferentes partes interesadas, como podrían ser el cliente o el administrador del almacén.
+
+![casosdeuso drawio_1 (1)](https://user-images.githubusercontent.com/91564872/171286552-aac70301-b4ea-491c-b275-398289b1d126.png)
+
+## DOCUMENTO DETALLADO DE REQUISITOS
+En este documento apreciamos las características de uno de los requisitos funcionales de forma concisa incluyendo la secuencia de este, comentarios y actores entre otros.
+
+![diagramadetallado](https://user-images.githubusercontent.com/91564872/171286810-998acba6-fe93-4640-9418-2cb7504cdc11.png)
+
+## MATRIZ REQUISITOS/TECNOLOGIAS
+Esta imagen hace refencia a la matriz de requisitos existentes y las tecnologías usadas. En conclusión esta matriz se puede observar que requisitos van a utilizar ciertas tecnologías y que no.
+
+![matriz](https://user-images.githubusercontent.com/91564872/171291092-5d9d41ac-e740-4398-abbb-9dca8f302ea1.png)
+
+
+
+

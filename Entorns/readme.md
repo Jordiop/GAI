@@ -1,5 +1,11 @@
 # DIAGRAMAS
 
+## DIAGRAMA INICIAL DE PROYECTO
+En el diagrama inicial podremos observar que usa el \ac{HTTP}, el cual va a ser fundamental para el funcionamiento correcto de GAI.
+
+![diagramav3](https://user-images.githubusercontent.com/91564872/171284770-6bc7420c-e8f1-4261-8a29-46c3886bf2e8.png)
+
+
 ## DIAGRAMA DE PAQUETES
 Este diagrama nos servirá para mostrar la organización y disposición de diversos elementos del modelo de nuestro programa.
 

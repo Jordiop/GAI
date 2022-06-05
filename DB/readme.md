@@ -1,7 +1,7 @@
 # Apartat de Bases de dades del projecte final de DAW
 ## Model Entitat - Relació de GAI
 
-![image](https://user-images.githubusercontent.com/91564872/162234973-e6dc9ab0-cb59-49d9-b2b5-335feab2fb96.png)
+![image](https://user-images.githubusercontent.com/91564872/172071924-32e90735-74c1-44c9-950d-589b5edef971.png)
 
 ## Model relacional de GAI
 

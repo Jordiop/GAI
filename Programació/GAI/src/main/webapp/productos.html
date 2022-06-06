@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="es-ES">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GAI - Productos</title>
+    <link rel="stylesheet" href="css/estilos.css">
+    <!--script per inserir es iconos-->
+    <script src="https://kit.fontawesome.com/41bcea2ae3.js" crossorigin="anonymous"></script>
+</head>
+
+<body id="body">
+
+    <header>
+        <div class="icon__menu">
+            <i class="fas fa-bars" id="btn_open"></i>
+        </div>
+        <div>
+            <a id="holaaa" href="index.html" onclick="logout()"></a>
+        </div>
+    </header>
+
+    <!--Barra de navegació lateral entre ses diferents págs-->
+    <div class="menu__side" id="menu_side">
+
+        <div class="name__page">
+            <i class="fa-solid fa-warehouse"></i>
+            <h4>G.A.I.</h4>
+        </div>
+
+        <div class="options__menu">
+
+            <a href="index.html">
+                <div class="option">
+                    <i class="fas fa-home" title="inicio"></i>
+                    <h4>Inicio</h4>
+                </div>
+            </a>
+
+            <a href="LogIn.html">
+                <div class="option">
+                    <i class="fa-solid fa-arrow-right-to-bracket" title="Log In"></i>
+                    <h4>Log In</h4>
+                </div>
+            </a>
+
+            <a href="gestionAl.html">
+                <div class="option">
+                    <i class="fa-solid fa-border-all" title="Gestión Almacén"></i>
+                    <h4>Gestión</h4>
+                </div>
+            </a>
+
+            <a href="" class="selected">
+                <div class="option">
+                    <i class="fa-solid fa-magnifying-glass" title="Buscador"></i>
+                    <h4>Buscadores</h4>
+                </div>
+            </a>
+
+            <a href="productGestio.html">
+                <div class="option">
+                    <i class="fa-solid fa-boxes-stacked" title="Productos"></i>
+                    <h4>Productos</h4>
+                </div>
+            </a>
+
+            <a href="contacto.html">
+                <div class="option">
+                    <i class="fa-solid fa-message" title="Contacto"></i>
+                    <h4>Contacto</h4>
+                </div>
+            </a>
+
+            <a href="admin.html">
+                <div class="option">
+                    <i class="fa-solid fa-users-gear" title="Admin"></i>
+                    <h4>Administración</h4>
+                </div>
+            </a>
+
+            <a href="nosotros.html">
+                <div class="option">
+                    <i class="fa-solid fa-users" title="Nosotros"></i>
+                    <h4>Nosotros</h4>
+                </div>
+            </a>
+
+        </div>
+
+    </div>
+
+    <main>
+        <h1 class="produtit">¿Qué producto quieres?</h1><br>
+
+        <!--Método buscar producto (String)-->
+        <div class="org2">
+            <div class="buscarP">
+                <form>
+                    <legend><h2>Buscar producto</h2></legend><br>
+                    <label for="busqueda">Buscar: <input type="text" id="busqueda"></label><br>
+                    <button class="button" type="button" onclick="cinc()" style="vertical-align:middle"><span>Buscar</span></button><br>
+                </form>
+            </div>
+            <br>
+            <!--Mostrar estanteria-->
+            <div class="mostrarE">
+                <form>
+                    <legend><h2>Mostrar estanteria</h2></legend><br>
+                    <label for="pasillo">Pasillo: <input type="number" id="npasillo"></label><br>
+                    <label for="estanteria">Estanteria: <input type="number" id="nestanteria"></label><br>
+                    <button class="button" type="button" onclick="tres()" style="vertical-align:middle"><span>Mostrar</span></button><br>
+                </form>
+            </div>
+            <br>
+            <!--Mostrar pasillo-->
+            <div class="mostrarP">
+                <form>
+                    <legend><h2>Mostrar pasillo</h2></legend><br>
+                    <label for="pasillo">Pasillo: <input type="number" id="mostrarPasillo"></label><br>
+                    <button class="button" type="button" onclick="quatre()" style="vertical-align:middle"><span>Mostrar</span></button><br>
+                </form>
+            </div>
+            <div class="respuesta" id="respuesta"></div>
+        </div>
+    </main>
+    <!--Aques script ha d'anar aqui obligatoriament perque funcioni correctament-->
+    <script src="js/script.js"></script>
+</body>
+
+</html>

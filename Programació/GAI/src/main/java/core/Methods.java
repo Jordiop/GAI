@@ -26,11 +26,36 @@ public class Methods {
 		Connection con = DriverManager.getConnection(url, "jordi", "8018");
 		Statement st = con.createStatement();
 		
-		System.out.println("Bienvenido al selector de selects en local");
-		System.out.println("¿Qué select deseas realizar?");
+		boolean rescate = true;
+		
+		while (rescate == true) {
+		
+		System.out.println("Bienvenido al selector de métodos en local");
+		System.out.println("¿Qué deseas hacer?");
+		System.out.println("0.  Salir");
+		System.out.println("1.  Añadir almacén");
+		System.out.println("2.  Añadir pasillo");
+		System.out.println("3.  Eliminar pasillo");
+		System.out.println("4.  Añadir estantería");
+		System.out.println("5.  Eliminar estantería");
+		System.out.println("6.  Añadir producto");
+		System.out.println("7.  Eliminar producto");
+		System.out.println("8.  Modificar producto");
+		System.out.println("9.  Mostrar pasillo");
+		System.out.println("10. Mostrar estantería");
+		System.out.println("11. Buscar producto por nombre");
+		System.out.println("12. Registro de usuario");
+		System.out.println("13. Login");
+		System.out.println("14. Ver tickets");
+		System.out.println("15. Comprobar usuario");
+		System.out.println("16. Modo experto");
+		
 		int election = teclat.nextInt();
 		
 		switch (election) {
+		case 0:
+			rescate = false;
+			break;
 		case 1:
 			System.out.println("Añadir almacén");
 			System.out.println("Dame el número de almacén");
@@ -187,10 +212,13 @@ public class Methods {
 			} else {
 				break;
 			}
+		}
 }
 		
 	}
 	
-	
+	public static void main (String [] args) throws ClassNotFoundException, SQLException {
+		customSelect();
+	}	
 	
 }

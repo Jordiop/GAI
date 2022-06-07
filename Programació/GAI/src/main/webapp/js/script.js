@@ -261,6 +261,22 @@ function deu() {
         "&&cantidad=" + document.getElementById("cantidadNueva").value);
 }
 
+function missatge(){
+	var http;
+	http = new XMLHttpRequest;
+	let usuario = sessionStorage.getItem("usuario");
+	http.onreadystatechange = function() {
+		if (http.readyState == 4 && http.status == 200){
+			alert("Missatge enviat")
+		}
+	}
+	http.open("POST", "http://51.38.227.73:8080/GAI/Missatge", true);
+	http.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+	http.send("nombre=" + document.getElementById("nombre") + 
+			 "&&email=" + document.getElementById("email") + 
+			 "&&textarea=" + document.getElementById("textarea"));
+}
+
 // Mètode per iniciar sessió
 // Envia l'usuari i la contrasenya
 // Java sessions a nes java, que aquest comprova si l'usuari existeix dins la BBDD

@@ -10,12 +10,13 @@ public class Bbdd {
 	public static int idTreballadorNum = 2;
 	public static int idClientNum = 2;
 	public static int idPasilloNum = 3;
+	public static int contadorMensajes = 0;
 	// Part logística / administrativa
 	// Pasillos
 	// Funcionant
 	public static void addAlmacen (int almacen, String nom, String localitzacio) throws ClassNotFoundException, SQLException {
 		Class.forName("com.mysql.jdbc.Driver");
-		String url = "jdbc:mysql://localhost:3326/GAI";
+		String url = "jdbc:mysql://localhost:3306/GAI";
 		Connection con = DriverManager.getConnection(url, "jordi", "8018");
 		Statement st = con.createStatement();
 		
@@ -27,7 +28,7 @@ public class Bbdd {
 	
 	public static void addPasillo (int almacen, int numero) throws ClassNotFoundException, SQLException {
 		Class.forName("com.mysql.jdbc.Driver");
-		String url = "jdbc:mysql://localhost:3326/GAI";
+		String url = "jdbc:mysql://localhost:3306/GAI";
 		Connection con = DriverManager.getConnection(url, "jordi", "8018");
 		Statement st = con.createStatement();
 		idPasilloNum = idPasilloNum + 1;
@@ -41,7 +42,7 @@ public class Bbdd {
 	// Funcionant
 	public static void deletePasillo (int almacen, int pasillo) throws SQLException, ClassNotFoundException {
 		Class.forName("com.mysql.jdbc.Driver");
-		String url = "jdbc:mysql://localhost:3326/GAI";
+		String url = "jdbc:mysql://localhost:3306/GAI";
 		Connection con = DriverManager.getConnection(url, "jordi", "8018");
 		
 		Statement st = con.createStatement();
@@ -55,7 +56,7 @@ public class Bbdd {
 	// Hauria de funcionar
 	public static void addEstanteria (int almacen, int pasillo, int altura, int anchura) throws ClassNotFoundException, SQLException {
 		Class.forName("com.mysql.jdbc.Driver");
-		String url = "jdbc:mysql://localhost:3326/GAI";
+		String url = "jdbc:mysql://localhost:3306/GAI";
 		Connection con = DriverManager.getConnection(url, "jordi", "8018");
 		Statement st = con.createStatement();
 		contadorEstanterias = contadorEstanterias + 1;
@@ -68,7 +69,7 @@ public class Bbdd {
 	
 	public static void deleteEstanteria (int almacen, int pasillo, int estanteria) throws ClassNotFoundException, SQLException {
 		Class.forName("com.mysql.jdbc.Driver");
-		String url = "jdbc:mysql://localhost:3326/GAI";
+		String url = "jdbc:mysql://localhost:3306/GAI";
 		Connection con = DriverManager.getConnection(url, "jordi", "8018");
 		Statement st = con.createStatement();
 		String query = "DELETE FROM Estanterias WHERE idAlmacen = '"+almacen+"' and idPasillo = '"+pasillo+"' and idEstanteria = '"+estanteria+"'";
@@ -81,7 +82,7 @@ public class Bbdd {
 	// Funcionant
  	public static void addProduct (int idProducto,String pname, String pdescription, int pquantity, int positionx, int positiony, int pestanteria, int ppasillo) throws SQLException, ClassNotFoundException {
 		Class.forName("com.mysql.jdbc.Driver");
-		String url = "jdbc:mysql://localhost:3326/GAI";
+		String url = "jdbc:mysql://localhost:3306/GAI";
 		Connection con = DriverManager.getConnection(url, "jordi", "8018");
 		Statement st = con.createStatement();
 		
@@ -94,7 +95,7 @@ public class Bbdd {
 	// Funcionant
 	public static void removeProduct(int pasillo, int estanteria, int producto) throws SQLException, ClassNotFoundException {
 		Class.forName("com.mysql.jdbc.Driver");
-		String url = "jdbc:mysql://localhost:3326/GAI";
+		String url = "jdbc:mysql://localhost:3306/GAI";
 		Connection con = DriverManager.getConnection(url, "jordi", "8018");
 		
 		Statement st = con.createStatement();
@@ -106,7 +107,7 @@ public class Bbdd {
 	
 	public static void modProduct (int id, String nombre, int cantidad) throws ClassNotFoundException, SQLException {
 		Class.forName("com.mysql.jdbc.Driver");
-		String url = "jdbc:mysql://localhost:3326/GAI";
+		String url = "jdbc:mysql://localhost:3306/GAI";
 		Connection con = DriverManager.getConnection(url, "jordi", "8018");
 		
 		Statement st = con.createStatement();
@@ -120,7 +121,7 @@ public class Bbdd {
 	// Funcionant
 	public static String mostrarPasillo (int pasillo) throws ClassNotFoundException, SQLException {
 		Class.forName("com.mysql.jdbc.Driver");
-		String url = "jdbc:mysql://localhost:3326/GAI";
+		String url = "jdbc:mysql://localhost:3306/GAI";
 		Connection con = DriverManager.getConnection(url, "jordi", "8018");
 		Statement st = con.createStatement();
 		
@@ -160,7 +161,7 @@ public class Bbdd {
 	// Funcionant
 	public static String mostrarEstanteria (int pasillo, int estanteria) throws ClassNotFoundException, SQLException {
 		Class.forName("com.mysql.jdbc.Driver");
-		String url = "jdbc:mysql://localhost:3326/GAI";
+		String url = "jdbc:mysql://localhost:3306/GAI";
 		Connection con = DriverManager.getConnection(url, "jordi", "8018");
 		Statement st = con.createStatement();
 		
@@ -200,7 +201,7 @@ public class Bbdd {
 	// Funcionant
 	public static String buscarProducto (String nom) throws SQLException, ClassNotFoundException {
 		Class.forName("com.mysql.jdbc.Driver");
-		String url = "jdbc:mysql://localhost:3326/GAI";
+		String url = "jdbc:mysql://localhost:3306/GAI";
 		Connection con = DriverManager.getConnection(url, "jordi", "8018");
 		Statement st = con.createStatement();
 		
@@ -242,7 +243,7 @@ public class Bbdd {
 	// Registre i inici sessió treballadors
 	public static void registroUsuari (int idAlmacen, String username, String password, String nombre, String apellidos, String rango) throws SQLException, ClassNotFoundException {
 		Class.forName("com.mysql.jdbc.Driver");
-		String url = "jdbc:mysql://localhost:3326/GAI";
+		String url = "jdbc:mysql://localhost:3306/GAI";
 		Connection con = DriverManager.getConnection(url, "jordi", "8018");
 		Statement st = con.createStatement();
 		
@@ -258,7 +259,7 @@ public class Bbdd {
 	
 	public static String iniciarSesion (String usuari, String password) throws SQLException, ClassNotFoundException {
 		Class.forName("com.mysql.jdbc.Driver");
-		String url = "jdbc:mysql://localhost:3326/GAI";
+		String url = "jdbc:mysql://localhost:3306/GAI";
 		Connection con = DriverManager.getConnection(url, "jordi", "8018");
 		Statement st = con.createStatement();
 		
@@ -278,13 +279,16 @@ public class Bbdd {
 	
 	// Part comunicativa
 	
-	public static void missatge (String nombre, String email, String missatge) throws ClassNotFoundException, SQLException {
+	public static void missatge (String email, String missatge) throws ClassNotFoundException, SQLException {
 		Class.forName("com.mysql.jdbc.Driver");
-		String url = "jdbc:mysql://localhost:3326/GAI";
+		String url = "jdbc:mysql://localhost:3306/GAI";
 		Connection con = DriverManager.getConnection(url, "jordi", "8018");
 		Statement st = con.createStatement();
+		
+		contadorMensajes = contadorMensajes + 1;
+		int a = contadorMensajes;
 
-		String query = "INSERT INTO Missatges VALUES ("+nombre+","+email+","+missatge+")";
+		String query = "INSERT INTO Missatges VALUES ("+a+","+email+","+missatge+")";
 		st.executeQuery(query);
 		
 		st.close();
@@ -295,7 +299,7 @@ public class Bbdd {
 	
 	public static void registreClient (String usuari, String password, String nom, String cognoms, String DNI, String email) throws ClassNotFoundException, SQLException {
 		Class.forName("com.mysql.jdbc.Driver");
-		String url = "jdbc:mysql://localhost:3326/GAI";
+		String url = "jdbc:mysql://localhost:3306/GAI";
 		Connection con = DriverManager.getConnection(url, "jordi", "8018");
 		Statement st = con.createStatement();
 		
@@ -311,7 +315,7 @@ public class Bbdd {
 	
 	public static String iniciClient (String usuari, String password) throws ClassNotFoundException, SQLException {
 		Class.forName("com.mysql.jdbc.Driver");
-		String url = "jdbc:mysql://localhost:3326/GAI";
+		String url = "jdbc:mysql://localhost:3306/GAI";
 		Connection con = DriverManager.getConnection(url, "jordi", "8018");
 		Statement st = con.createStatement();
 		String resultat = "";
@@ -332,7 +336,7 @@ public class Bbdd {
 	
 	public static boolean comprobarUsuario(String usuari) throws ClassNotFoundException, SQLException {
 		Class.forName("com.mysql.jdbc.Driver");
-		String url = "jdbc:mysql://localhost:3326/GAI";
+		String url = "jdbc:mysql://localhost:3306/GAI";
 		Connection con = DriverManager.getConnection(url, "jordi", "8018");
 		Statement st = con.createStatement();
 		boolean comprobant = false;
@@ -361,7 +365,7 @@ public class Bbdd {
 	
 	public static void customSelect (String select) throws ClassNotFoundException, SQLException {
 		Class.forName("com.mysql.jdbc.Driver");
-		String url = "jdbc:mysql://localhost:3326/GAI";
+		String url = "jdbc:mysql://localhost:3306/GAI";
 		Connection con = DriverManager.getConnection(url, "jordi", "8018");
 		Statement st = con.createStatement();
 		String resultat = "";

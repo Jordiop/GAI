@@ -19,14 +19,12 @@ public class AddEstanteria extends HttpServlet {
      */
     public AddEstanteria() {
         super();
-        // TODO Auto-generated constructor stub
     }
 
 	/**
 	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		// TODO Auto-generated method stub
 		response.addHeader("Access-Control-Allow-Origin", "*");
 		doPost(request, response);
 	}
@@ -35,7 +33,6 @@ public class AddEstanteria extends HttpServlet {
 	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
 	 */
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		// TODO Auto-generated method stub
 		try {
 			String usuari = request.getParameter("usuario");
 			String pasillo1 = request.getParameter("pasillo");
@@ -58,7 +55,7 @@ public class AddEstanteria extends HttpServlet {
 				}
 			
 		} catch (Exception e){
-			
+			System.out.println(e);
 		}
 		response.addHeader("Access-Control-Allow-Origin", "*");
 	}

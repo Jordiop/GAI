@@ -15,7 +15,6 @@ body {
     background-repeat: no-repeat;
     background-size: 100%;
     background-attachment: fixed;
-    width: 100%;
 }
 
 main {
@@ -542,7 +541,7 @@ textarea {
 .respuesta table {
     font-family:'Open Sans', sans-serif;
     border-collapse: collapse;
-    width: 100%;
+    width: auto;
     margin-top: 100px;
     top:100px;
 }

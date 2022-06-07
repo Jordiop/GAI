@@ -37,10 +37,10 @@ public class Missatge extends HttpServlet {
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
 		try {
-		String nombre = request.getParameter("nombre");
 		String email = request.getParameter("email");
-		String missatge = request.getParameter("missatge");
-		Bbdd.missatge(nombre,email,missatge);
+		String missatge = request.getParameter("textarea");
+		System.out.println("missatge");
+		Bbdd.missatge(email,missatge);
 		} catch (Exception e) {
 			System.out.println(e);
 		}

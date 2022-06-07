@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="es-ES">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GAI - Gestión de Almacénes Interactivo</title>
+    <link rel="stylesheet" href="css/estilos.css">
+    <!--script per inserir es iconos-->
+    <script src="https://kit.fontawesome.com/41bcea2ae3.js" crossorigin="anonymous"></script>
+</head>
+
+<body id="body">
+
+    <header>
+        <div class="icon__menu">
+            <i class="fas fa-bars" id="btn_open"></i>
+        </div>
+        <div>
+            <a id="holaaa" href="index.html" onclick="logout()"></a>
+        </div>
+    </header>
+
+    <!--Barra de navegació lateral entre ses diferents págs-->
+    <div class="menu__side" id="menu_side">
+
+        <div class="name__page">
+            <i class="fa-solid fa-warehouse"></i>
+            <h4>G.A.I.</h4>
+        </div>
+
+        <div class="options__menu">
+
+            <a href="" class="selected">
+                <div class="option">
+                    <i class="fas fa-home" title="inicio"></i>
+                    <h4>Inicio</h4>
+                </div>
+            </a>
+
+            <a href="LogIn.html">
+                <div class="option">
+                    <i class="fa-solid fa-arrow-right-to-bracket" title="Log In"></i>
+                    <h4>Log In</h4>
+                </div>
+            </a>
+
+            <a href="gestionAl.html">
+                <div class="option">
+                    <i class="fa-solid fa-border-all" title="Gestión Almacén"></i>
+                    <h4>Gestión</h4>
+                </div>
+            </a>
+
+            <a href="productos.html">
+                <div class="option">
+                    <i class="fa-solid fa-magnifying-glass" title="Buscador"></i>
+                    <h4>Buscadores</h4>
+                </div>
+            </a>
+
+            <a href="productGestio.html">
+                <div class="option">
+                    <i class="fa-solid fa-boxes-stacked" title="Productos"></i>
+                    <h4>Productos</h4>
+                </div>
+            </a>
+
+            <a href="contacto.html">
+                <div class="option">
+                    <i class="fa-solid fa-message" title="Contacto"></i>
+                    <h4>Contacto</h4>
+                </div>
+            </a>
+
+            <a href="admin.html">
+                <div class="option">
+                    <i class="fa-solid fa-users-gear" title="Admin"></i>
+                    <h4>Administración</h4>
+                </div>
+            </a>
+
+            <a href="nosotros.html">
+                <div class="option">
+                    <i class="fa-solid fa-users" title="Nosotros"></i>
+                    <h4>Nosotros</h4>
+                </div>
+            </a>
+
+        </div>
+
+    </div>
+
+    <main>
+        <img class="logonig" src="img/logonigga.png"><br>
+
+        <div class="contenido">
+            <h3 class="contenido-margen">¿Qué es GAI?</h3>
+
+            <p class="margen1">
+                Como es bien sabido, la gestión y la administración de cualquier empresa es todo un reto para el encargado de esa función. Actualmente, en un mundo dónde la mayoría de empresas envían y reciben paquetería con productos, es aún más difícil conseguir que
+                esa organización y gestión sea buena.
+            </p><br>
+
+            <p class="margen1">
+                Para que esta gestión sea buena y precisa, debemos de tener en cuenta varios aspectos. El primero, el propio diseño del almacén, que puede favorecer o no a la fácil gestión del mismo. Ha de haber un equilibrio entre el aprovechamiento del espacio y la
+                facilidad de acceso. El segundo aspecto a tener en cuenta es la gestión de stock. Aquí es dónde realmente un software te puede ayudar más. El stock debe ser controlado al 100 % para tener una efectividad elevada. Con este software además,
+                se ahorra tiempo, se ahorran desplazamientos y se minimizan los errores.
+            </p><br>
+
+            <p class="margen1">
+                Tomando en cuenta los puntos previamente mencionados, llegamos a la idea de hacer un gestor de almacenamiento para el proyecto transversal que se nos propuso. ¿Qué es GAI? Bueno, G.A.I son las iniciales de "Gestión de Almacén Interactiva". Tiene como
+                objetivo el control absoluto de todos los productos del almacén, el stock y so- bre todo, facilitar la búsqueda de productos del mismo. Con ello, lo que se busca, es optimizar el tiempo de búsqueda.
+            </p><br>
+
+            <h3 class="contenido-margen2">¿Cómo funciona GAI y que servicios ofrecemos?</h3><br>
+            <div class="aline">
+                <div class="imgd">
+                    <img class="margen1" src="img/diagramav3.png" alt="Imagen de un diagrama sobre cómo funciona GAI">
+                </div>
+
+                <div class="texto">
+                    <p class="margen1">
+                        Como podemos observar en el diagrama vemos como se enlaza y se compone GAI mediante las diferentes tecnologías.
+                    </p><br>
+
+                    <p class="margen1">
+                        Bueno los servicios que ofrecemos se dividen en dos partes, la primera dirigida a los clientes y luego en la sección de administración va dirigida para los empleados para que puedan llevar la gestión del supuesto almacén.
+                    </p><br>
+
+                    <p class="margen1">
+                        En el apartado de productos encontrarás un buscador para encontrar el producto en específico, o si lo prefieres podrás ver una tabla con el catálogo de los diferentes productos de los que disponemos.
+                    </p><br>
+
+                    <p class="margen1">
+                        Además de que si quieres realizar compras deberás registrarte antes en caso de que no lo estés previamente, por ello en la sección de registro solo deberás introducir tus datos y presionar el botón de enviar.
+                    </p>
+
+                    <p class="margen1">
+                        <a class="linkgit" href="https://github.com/Jordiop/GAI.git">¡Si quieres saber más sobre este proyecto clica aquí!</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </main>
+    <!--Aques script ha d'anar aqui obligatoriament perque funcioni correctament-->
+    <script src="js/script.js"></script>
+</body>
+
+</html>

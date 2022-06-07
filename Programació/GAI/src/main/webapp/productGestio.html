@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="es-ES">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GAI - Gestión de productos</title>
+    <link rel="stylesheet" href="css/estilos.css">
+    <!--script per inserir es iconos-->
+    <script src="https://kit.fontawesome.com/41bcea2ae3.js" crossorigin="anonymous"></script>
+</head>
+
+<body id="body">
+
+    <header>
+        <div class="icon__menu">
+            <i class="fas fa-bars" id="btn_open"></i>
+        </div>
+        <div>
+            <a id="holaaa" href="index.html" onclick="logout()"></a>
+        </div>
+    </header>
+
+    <!--Barra de navegació lateral entre ses diferents págs-->
+    <div class="menu__side" id="menu_side">
+
+        <div class="name__page">
+            <i class="fa-solid fa-warehouse"></i>
+            <h4>G.A.I.</h4>
+        </div>
+
+        <div class="options__menu">
+
+            <a href="index.html">
+                <div class="option">
+                    <i class="fas fa-home" title="inicio"></i>
+                    <h4>Inicio</h4>
+                </div>
+            </a>
+
+            <a href="LogIn.html">
+                <div class="option">
+                    <i class="fa-solid fa-arrow-right-to-bracket" title="Log In"></i>
+                    <h4>Log In</h4>
+                </div>
+            </a>
+
+            <a href="gestionAl.html">
+                <div class="option">
+                    <i class="fa-solid fa-border-all" title="Gestión Almacén"></i>
+                    <h4>Gestión</h4>
+                </div>
+            </a>
+
+            <a href="productos.html">
+                <div class="option">
+                    <i class="fa-solid fa-magnifying-glass" title="Buscador"></i>
+                    <h4>Buscadores</h4>
+                </div>
+            </a>
+
+            <a href="" class="selected">
+                <div class="option">
+                    <i class="fa-solid fa-boxes-stacked" title="Productos"></i>
+                    <h4>Productos</h4>
+                </div>
+            </a>
+
+            <a href="contacto.html">
+                <div class="option">
+                    <i class="fa-solid fa-message" title="Contacto"></i>
+                    <h4>Contacto</h4>
+                </div>
+            </a>
+
+            <a href="admin.html">
+                <div class="option">
+                    <i class="fa-solid fa-users-gear" title="Admin"></i>
+                    <h4>Administración</h4>
+                </div>
+            </a>
+
+            <a href="nosotros.html">
+                <div class="option">
+                    <i class="fa-solid fa-users" title="Nosotros"></i>
+                    <h4>Nosotros</h4>
+                </div>
+            </a>
+
+        </div>
+
+    </div>
+    
+    <main>
+        <h1 class="gesprotit">Gestión de productos</h1><br>
+        <div class="org">
+            <div class="eliminar">
+                <form class="eliminarFP">
+                    <legend><h2>Eliminar producto</h2></legend><br>
+                    <label for="pasillo">Pasillo:<input type="number" id="delPPasillo"></label><br>
+                    <label for="estanteria">Esanteria: <input type="number" id="delPEstanteria"></label><br>
+                    <label for="productID">ID del producto: <input type="number" id="delPID"></label><br>
+                    <button class="button" type="button" onclick="dos()"><span>Eliminar</span></button><br>
+                </form>
+            </div>
+            <br>
+            <div class="añadir">
+                <form class="añadirFP">
+                    <legend><h2>Añadir producto</h2></legend><br>
+                    <label for="name">Nombre del producto:<input type="text" id="pname"></label><br>
+                    <label for="pdescription">Descripción: <input type="text" id="pdescription"></label><br>
+                    <label for="pquantity">Cantidad:<input type="text" id="pquantity"></label><br>
+                    <label for="ppasillo">Pasillo:<input type="text" id="ppasillo"></label><br>
+                    <label for="pestanteria">Estanteria:<input type="text" id="pestanteria"></label><br>
+                    <label for="x">Posición x:<input type="text" id="x"></label><br>
+                    <label for="y">Posición y:<input type="text" id="y"></label><br>
+                    <button class="button" type="button" onclick="uno()" style="vertical-align:middle"><span>Añadir</span></button><br>
+                    <div id="resultat"></div>
+                    <!--Per comprobar es resultat-->
+                </form>
+            </div>
+            <br>
+            <div class="modificar">
+                <form class="modificarFP">
+                    <legend><h2>Modificar producto</h2></legend><br>
+                    <label for="productID">ID del producto: <input type="number" id="idProducto"></label><br>
+                    <label for="nuevoNombre">Nombre nuevo: <input type="text" id="nuevoNombre"></label><br>
+                    <label for="nuevaCantidad">Cantidad nueva: <input type="number" id="cantidadNueva"></label><br>
+                    <button class="button" type="button" onclick="deu()"><span>Modificar</span></button><br>
+                </form>
+            </div>
+        </div>
+    </main>
+    <!--Aquest script ha d'anar aqui obligatoriament perque funcioni correctament-->
+    <script src="js/script.js"></script>
+</body>
+
+</html>

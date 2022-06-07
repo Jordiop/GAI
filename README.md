@@ -10,7 +10,7 @@ Tomando en cuenta los puntos previamente mencionados, llegamos a la idea de hace
 
 
 ## Diagrama inicial del proyecto
-[diagramaAmpliado drawio](https://user-images.githubusercontent.com/95173613/172496561-08c9f3ec-5745-4de9-88c6-7a0dcb4251ac.png)
+![diagramaAmpliado drawio(1)](https://user-images.githubusercontent.com/95173613/172496629-a6d64e59-b21b-44ae-a89e-ac537f66c8c7.png)
 
 
 En el diagrama inicial podremos observar que usa el protocolo HTTP, el cual va a ser fundamental para el funcionamiento correcto de GAI.

@@ -5,4 +5,5 @@
 
 ## Model relacional de GAI
 
-![ddbb](https://user-images.githubusercontent.com/95173613/172495348-dabbcfc0-de8b-43e0-93fd-9fbb4c26f330.png)
+![image](https://user-images.githubusercontent.com/91564872/172651003-a54eb046-0dd3-4796-9cad-f3534fe40899.png)
+

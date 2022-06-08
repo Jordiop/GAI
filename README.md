@@ -16,3 +16,6 @@ Tomando en cuenta los puntos previamente mencionados, llegamos a la idea de hace
 En el diagrama inicial podremos observar que usa el protocolo HTTP, el cual va a ser fundamental para el funcionamiento correcto de GAI.
 
 Los objetivos de esta aplicación son: entrada y salida de stock, ubicación en el almacén, características del producto, características, identificación, distribución de productos.
+
+## Página web dedicada
+http://51.38.227.73:8080/GAI/LogIn.html
